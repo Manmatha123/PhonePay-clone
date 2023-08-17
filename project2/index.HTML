@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bharattour</title>
+    <link rel="stylesheet"href="style.css">
+
+    <script src="https://kit.fontawesome.com/539b520df4.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+<nav class="nav" id="nav">
+   
+<div id="navicons"class="nav-list">
+    <li scr="#home"><i class="fa-solid fa-house  linkh home"></i>Home</li>
+    <li scr="#about"><i class="fa-sharp fa-solid fa-address-card about"></i>About</li>
+    <li scr="#contact"><i class="fa-solid fa-envelope contactn"></i>Contact</li>
+    <li scr="#service"><i class="fa-sharp fa-solid fa-headphones service"></i>Service</li>
+
+<!-- <div class="rightnav" id="rnav"> -->
+
+  <input type="text"name="search"id="search"placeholder="search her...">
+<button class="button"onclick='location="https://google.com"'>serach</button>  
+<!-- </div> -->
+</div>
+<div class="humberger" id="berger">
+  <li></li>
+  <li ></li>
+  <li></li>
+</div>
+</nav>
+    
+<div class="boxhead">
+  <img src="taj.jpg"id="taj">
+   <span class="firsthalf"><h1 id="titel">I LOVE INDIA</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum beatae aut. Aliquid odit fugit adipisci tempora praesentium numquam 
+  incidunt mollitia perspiciatis commodi, id pariatur quisquam similique consequuntur cum rerum aliquam provident, ullam tenetur.   <!--<div class="secondhalf"></div>--> </span> 
+
+</div>
+
+<section class="frame">
+<div class="frameleft"><h1>MERA BHARAT</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque debitis consequatur quia tempore eaque at tenetur impedit 
+  deserunt, eveniet earum harum minus perspiciatis et. Repellendus nostrum nobis quidem asperiores expedita harum minima adipisci.</div>
+<div class="frameright">
+  <div class="row1">
+  <div class="photo" id="p1"><img src="tajmaha.jpg" id="i1"></div>
+
+  <div class="photo" id="p2"><img src="himalaya.jpg" id="i2"></div>
+
+</div>
+<div class="row2">
+  <div class="photo" id="p3"><img src="tiger.jpg" id="i3"></div>
+  <div class="photo" id="p4"><img src="peacock1.jpg" id="i4"></div>
+</div>
+<div class="row3">
+
+  <div class="photo" id="p5"><img src="sunrise3.jpg" id="i5"></div>
+</div>
+
+
+<div class="row4">
+  <div class="photo" id="p6"><img src="waterfall1.jpg" id="i6"></div>
+  <div class="photo" id="p7"><img src="indiagate.jpg" id="i7"></div>
+  
+  
+ 
+</div>
+</div>
+</section>
+<div id="middlepart">
+<div class="slidingimg">
+<marquee width="100%" direction="right"  scrollamount="7"><h2 id="sectext">Do you want to visit your favoright place ....</h2></marquee>
+<h4 id="sectext2">Then end of your search here with us....By visiting our website you can get all 
+  information about this place here like temperature ,navigation,wheather,transpotation-facility,nearest hotel,resturent etc.. here</h4>
+</div>
+<section class="section2">
+
+<div class="leftsec"><img src="peacock1.jpg"id="sec2img"></div>
+
+<div class="rightsec">
+  <h2 id="text">Know about this place </h2>
+
+<input type="text"placeholder="Enetr city name"id="inputbox1"><button id="click" onclick="search()">Click me</button></input>
+<!-- <button id="click" onclick="search()">Click me</button> -->
+<div class="information">
+  <div id="rows">
+  <span class="datarow"id="rowspan1"><span id="countryname"></span> <span id="idh4"></span></span>
+ <span class="datarow"id="rowspan2"><span id="leftspanrow"></span> <span id="row2site"></span></span>
+
+ <span class="datarow"id="rowspan3">
+  <span id="w"></span>
+  <span id="h"></span>
+  <span id="t"></span>
+ </span> 
+
+</div>
+
+</div>
+</div>
+</section>
+</div>
+<div class="section3">
+  <div class="leftsection3"><h2>Good morning INDIA</h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, nostrum nobis ducimus consectetur optio quae omnis,
+     harum expedita eius vero asperiores 
+     facilis quod laborum sequi molestiae 
+     doloribus quia? Consequuntur eum labore vitae quia ullam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam enim ex libero tempora rerum quod magnam, ullam maiores suscipit? Quisquam maxime necessitatibus, saepe placeat aliquam voluptate ex optio 
+    reprehenderit, porro, eligendi nobis nostrum.</div>
+
+<div class="rightsection3">
+  <video class="videotag"controls autoplay muted>
+    <source src="Maheroo_Maheroo_Full_Video_HD___Super_Nani___Sharman_Joshi___Shweta_Kumar__Shrey.mp4"type="video/mp4">
+  </video>
+</div>
+
+</div>
+
+
+
+<footer class="footer">Copyright &copy 2027-www.bharattour.com -All rights reserved @manmath</footer>
+
+
+
+
+
+<script>
+
+var inputbox1=document.getElementById('inputbox1');
+var leftspanrow=document.getElementById('leftspanrow');
+var row3=document.getElementById('rowspan3');
+var row2site=document.getElementById('row2site');
+var countryname=document.getElementById('countryname');
+var w=document.getElementById('w');
+var h=document.getElementById('h');
+var p=document.getElementById('t');
+var idh4=document.getElementById('idh4');
+var realdata;
+
+ function search(){
+
+  apidat(realdata);
+ }
+
+ function apidat(city){
+
+  const myapi1='2ec579d141905d69ec2ef866cab568ee';
+ 
+  
+ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myapi1}&units=metric`)
+ .then((apidata)=>{
+
+    return apidata.json();
+ })
+ .then((response)=>{
+     console.log(response);
+
+     leftspanrow.innerText=`Temp: ${response.main.temp} C`;
+     countryname.innerText=` ${response.name}  `;
+    row2site.innerText=` ${response.weather[0].main}`;
+    idh4.innerText=` ${response.sys.country}`;
+
+
+
+
+
+       
+  p.innerText=`pressure: ${response.main.pressure} hpa`;    
+   h.innerText=`Humidity: ${response.main.humidity} %`;
+  w.innerText=`Wind-speed:${response.wind.speed} m/s`;
+
+ });
+ }
+inputbox1.addEventListener('keyup',(e)=>{
+  createtags(e.target.value);
+})
+ function createtags(inputval){
+  realdata=inputval;
+ }
+
+
+
+ var nav= document.getElementById('nav');
+ var navicons= document.getElementById('navicons');
+ var rnav= document.getElementById('rnav');
+var berger=document.getElementById('berger');
+
+
+
+berger.addEventListener('click',()=>{
+
+  
+
+ if(  nav.style.height="50px"){
+
+nav.style.height="300px";
+navicons.style.visibility="visible";
+
+}
+
+else{
+
+alert('good  evening');
+nav.style.height="50px";
+navicons.style.visibility="hidden";
+rnav.style.visibility="hidden";
+
+
+}
+
+
+})
+  
+
+
+
+</script>
+</html>

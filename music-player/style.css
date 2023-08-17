@@ -1,0 +1,222 @@
+
+body{
+    background-color: white ;
+    border:1px solid black;
+   
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+}
+.treading{
+
+    color:red;
+}
+
+.home{
+
+    color:blue;
+}
+
+.about{
+    
+    color:chartreuse;
+}
+
+.contactn{
+
+    color:blueviolet;
+}
+
+.service{
+font-size: 30px;
+    color:khaki;
+    animation: rotate 2s ease-in-out infinite alternate-reverse;
+}
+.watch{
+    height:30px;
+    width: 48px;
+    padding:15px;
+    border:2px solid white;
+    border-radius:4px;
+    background:red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size:10px;
+    
+    
+}
+.fa-brands{
+
+    font-size: 20px;
+}
+
+
+.navi{
+    justify-content:left;
+    position:sticky;
+    top:0;
+    
+    height:59px;
+    display:flex;
+    width:100%;
+   display:flex;
+   justify-content: center;
+   background:url('girl-img2.jpg');
+}
+.sign{
+    margin-top: 2px;
+position:absolute;
+cursor: pointer;
+right:30px;
+top: 30px;
+
+}
+ .signin{
+    background-color:blue;
+    height:25px;
+    width:100px;
+    border:2px solid white;
+border-radius:10px;   
+text-align: center; 
+color:white
+    }
+.signin:hover{
+    background:linear-gradient(45deg,red,yellow);
+}
+.fstsection{
+    flex-direction:column;
+    height:100%;
+    align-items:center;
+}
+.firshalf{
+  width:100%;
+  display:flex;
+
+  justify-content: center;
+}
+
+.nav-list{
+    width:100%;
+    display:flex;
+    align-items: center;
+    height:100%;
+        
+    }
+    .nav-list li{
+        list-style:none;
+        padding:26px 28px;
+        font-size:19px;
+    display: block;
+    
+    }
+    
+    .nav-list li a{
+        text-decoration: none;
+        color:white;
+    }
+    .nav-list li  a:hover{
+        cursor: pointer;
+        text-decoration: none;
+        color:red;
+    cursor: pointer;
+    z-index: 2;
+    
+    }
+    
+    .nav-list  :hover{
+        height:100%;
+       background: gray;
+        box-sizing:border-box;
+        cursor: pointer;
+    
+    }
+    
+#search{
+    padding-right:6px;
+    font-size: 12px;
+    border:2px solid white;
+    border-radius: 10px 0 10px 0;
+background:transparent;
+color:white;
+  height:27px;
+  outline: none;
+  
+
+}
+
+.btn{
+    margin-right:30.5px;
+    height:27px;
+    border:2px solid white;
+    border-radius:0 0 10px 0;
+    right:-0.5px;
+    box-sizing: border-box;
+    color:white;
+    position: absolute;
+    background-color:blue;
+    
+    }
+    .navright{
+        width:50%;
+        text-align: right;
+     padding-top:3px;
+    
+     padding-right:30px;
+    
+    }
+.center{
+    height:100vh;
+    width: 100vw;
+    background-color:black;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    background:gray;
+    display: grid;
+    place-items: center;
+}
+
+
+.right{
+    height: 100%;
+    width: 50%;
+    background:silver;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100vw;
+    line-height: 2rem;
+    margin-top: auto;
+    background-color: blue;
+    text-align: center;
+}
+    @keyframes rotate{
+        0%{
+            transform: rotate(-45deg);
+        }
+        100%{
+            transform: rotate(45deg);
+        }
+
+    }
